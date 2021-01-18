@@ -59,7 +59,7 @@ while True:
         x,y,s,z=game.load()
         size = (x * 20 + 200, y * 20 + 100)
         gamesize = (x* 20, y * 20)
-        game1 = Tetris(y, x, speed, x // 2 - 2,field=z)
+        game1 = Tetris(y, x, speed, x // 2 - 2)
         game1.field=z
         screen = pygame.display.set_mode(size)
         MainState = "start"
